@@ -13,6 +13,7 @@
 		ECAD0D8C2A7594CC00CFA67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAD0D8A2A7594CC00CFA67A /* Main.storyboard */; };
 		ECAD0D8E2A7594CD00CFA67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAD0D8D2A7594CD00CFA67A /* Assets.xcassets */; };
 		ECAD0D912A7594CD00CFA67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAD0D8F2A7594CD00CFA67A /* LaunchScreen.storyboard */; };
+		ECAD0D992A75A61D00CFA67A /* DetaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD0D982A75A61D00CFA67A /* DetaisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ECAD0D8D2A7594CD00CFA67A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECAD0D902A7594CD00CFA67A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECAD0D922A7594CD00CFA67A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAD0D982A75A61D00CFA67A /* DetaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				ECAD0D842A7594CC00CFA67A /* AppDelegate.swift */,
 				ECAD0D862A7594CC00CFA67A /* SceneDelegate.swift */,
 				ECAD0D882A7594CC00CFA67A /* ViewController.swift */,
+				ECAD0D982A75A61D00CFA67A /* DetaisViewController.swift */,
 				ECAD0D8A2A7594CC00CFA67A /* Main.storyboard */,
 				ECAD0D8D2A7594CD00CFA67A /* Assets.xcassets */,
 				ECAD0D8F2A7594CD00CFA67A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				ECAD0D892A7594CC00CFA67A /* ViewController.swift in Sources */,
 				ECAD0D852A7594CC00CFA67A /* AppDelegate.swift in Sources */,
+				ECAD0D992A75A61D00CFA67A /* DetaisViewController.swift in Sources */,
 				ECAD0D872A7594CC00CFA67A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
