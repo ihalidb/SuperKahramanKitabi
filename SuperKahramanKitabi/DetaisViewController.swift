@@ -14,10 +14,16 @@ class DetaisViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
+    var secilenKahramanIsmi = ""
+    var secilenKahramanGorselIsmi = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        imageView.image = UIImage(named: secilenKahramanGorselIsmi)
+        label.text = secilenKahramanIsmi
+        
     }
     
 

@@ -12,6 +12,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var superKahramanIsimleri = [String]()
     var superKahramanGorselisimleri = [String]()
     
+    var secilenIsim = ""
+    var secilenGorsel = ""
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,8 +65,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        secilenIsim = superKahramanIsimleri[indexPath.row]
+        secilenGorsel = superKahramanGorselisimleri[indexPath.row]
+        
         performSegue(withIdentifier: "toDetailsVC", sender: nil)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let destinationVC = segue.destination as! DetaisViewController
+            destinationVC.secilenKahramanIsmi = secilenIsim
+            destinationVC.secilenKahramanGorselIsmi = secilenGorsel
+        }
     }
 
 
