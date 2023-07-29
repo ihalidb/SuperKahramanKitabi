@@ -7,11 +7,50 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var superKahramanIsimleri = [String]()
+    var superKahramanGorselisimleri = [String]()
+    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+        superKahramanIsimleri.append("Batman")
+        superKahramanIsimleri.append("Superman")
+        superKahramanIsimleri.append("Iron man")
+        superKahramanIsimleri.append("Spiderman")
+        superKahramanIsimleri.append("Captain America")
+        
+        //var superKahramanGorselleri = [UIImage]()
+        //superKahramanGorselleri.append(UIImage(named: "batman")!)
+        
+        
+        superKahramanGorselisimleri.append("batman")
+        superKahramanGorselisimleri.append("superman")
+        superKahramanGorselisimleri.append("ironman")
+        superKahramanGorselisimleri.append("spiderman")
+        superKahramanGorselisimleri.append("cptamerica")
+        
+        
+    }
+    
+    //numberOfRowsInSection -> Kaç tane row olacak
+    //cellForRow atInderxPath -> hücrenin içerisinde neler gösterilecek
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return superKahramanIsimleri.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = superKahramanIsimleri[indexPath.row]
+        return cell
     }
 
 
